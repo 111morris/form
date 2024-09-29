@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Form submition</title>
  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
  <h1>Mulandi Morris Mwania</h1>
  <H2>Class assignment</H2>
@@ -13,9 +15,109 @@
 
  <div class="container">
   <form action="">
+   <h3>Student registration</h3>
+   <label for="registrationNumber">Registration Number: </label>
+   <input type="text" title="registration number" required>
+   <label for="name">Name</label>
+   <input type="text" title="name" required>
+   <label for="gender">gender</label>
+   <input type="radio" name="gender" id="" title="gender male"> Male
+   <input type="radio" name="gender" id="" title="gender female"> Female
 
+   
+   <div class="form-lower">
+    <div class="lower-colum1">
+     <label for="school">Select school:</label>
+     <select name="school" id="" title="schools" required>
+      <option value="">-- select ---</option>
+      <option value="Engineering">engineering</option>
+      <option value="Business/management">Business/management</option>
+      <option value="Medicine/Health Sciences">Medicine/Health Sciences</option>
+      <option value="Education">Education</option>
+      <option value=" Social Science">Social Science</option>
+      <option value=" Humanities and arts">Humanities and arts</option>
+      <option value="Information Technology/Computer Science">Information Technology/Computer Science</option>
+      <option value="  Agriculture and Environmental Sciences">Agriculture and Environmental Sciences</option>
+      <option value="Architectre and Design">Architectre and Design</option>
+      <option value="Journalism and Communication">Journalism and Communication</option>
+      <option value="Pubic Policy or Governement">Pubic Policy or Governement</option>
+      <option value=" Hospitalisty and Tourism">Hospitalisty and Tourism</option>
+     </select>
+     <label for="program">Choose a program:</label>
+     <select id="program" name="program">
+     <option value="">-- select --</option>
+      <!-- option group for the engineers -->
+      <optgroup label="Engineering">
+       <option value="mechanical-engineering">Mechanical Engineering</option>
+       <option value="civil-engineering">Civil Engineering</option>
+       <option value="electrical-engineering">Electrical and Electronic Engineering</option>
+       <option value="computer-engineering">Computer Engineering</option>
+       <option value="chemical-engineering">Chemical Engineering</option>
+       <option value="aerospace-engineering">Aerospace Engineering</option>
+       <option value="environmental-engineering">Environmental Engineering</option>
+      </optgroup>
+    <!-- option group for the biz poeple -->
+      <optgroup label="Business and Management">
+       <option value="business-administration">Business Administration</option>
+       <option value="accounting">Accounting</option>
+       <option value="finance">Finance</option>
+       <option value="marketing">Marketing</option>
+       <option value="entrepreneurship">Entrepreneurship</option>
+       <option value="hr-management">Human Resource Management</option>
+       <option value="international-business">International Business</option>
+       <option value="supply-chain-management">Supply Chain Management</option>
+      </optgroup>
+      <!-- option group for teh Information technology -->
+      <optgroup label="Computer Science and Information Technology">
+       <option value="computer-science">Computer Science</option>
+       <option value="information-technology">Information Technology (IT)</option>
+       <option value="software-engineering">Software Engineering</option>
+       <option value="data-science">Data Science</option>
+       <option value="cybersecurity">Cybersecurity</option>
+       <option value="artificial-intelligence">Artificial Intelligence</option>
+       <option value="information-systems">Information Systems</option>
+       <option value="web-development">Web Development</option>
+       <option value="game-development">Game Development</option>
+      </optgroup>
+      <!-- option group for the health section -->
+      <optgroup label="Health and Medical">
+       <option value="medicine">Medicine (M.D.)</option>
+       <option value="nursing">Nursing</option>
+       <option value="pharmacy">Pharmacy</option>
+       <option value="dentistry">Dentistry</option>
+       <option value="public-health">Public Health</option>
+       <option value="biomedical-sciences">Biomedical Sciences</option>
+       <option value="medical-lab-science">Medical Laboratory Science</option>
+       <option value="physical-therapy">Physical Therapy</option>
+       <option value="radiology">Radiology</option>
+      </optgroup>
+     </select>
+     
+     <!-- this is for the level section -->
+     <label for="level">Choose your level:</label>
+     <select id="level" name="level">
+      <option value="bachelors">Bachelor's</option>
+      <option value="masters">Master's</option>
+      <option value="phd">PhD</option>
+      <option value="diploma">Diploma</option>
+      <option value="certificate">Certificate</option>
+     </select>
+     <label for="feePayment">Fee Amount</label>
+    </div>
+    <div class="lower-column2">
+      <div id="uploadArea" class="upload-area">
+       Drag & Drop or Click to Upload
+      </div>
+      
+      <input class="upload-passport" type="file" id="fileInput" accept="image/*" title="Upload passport">
+    </div>
+   </div>
   </form>
+
+
  </div>
- 
+
+ <script src="scripts/script.js"></script>
 </body>
+
 </html>
