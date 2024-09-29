@@ -24,9 +24,9 @@
 
    <div class="reg-name">
     <label for="registrationNumber">Reg Number: </label>
-    <input id="registrationNumber" type="text" title="registration number" required>
+    <input class="reg-number-input" id="registrationNumber" type="text" title="registration number" required>
     <label for="name">Name</label>
-    <input type="text" title="name" required>
+    <input class="name-input" type="text" title="name" required>
    </div>
    <label for="gender">gender</label>
    <input type="radio" name="gender" id="" title="gender male"> Male
@@ -35,82 +35,105 @@
 
    <div class="form-lower">
     <div class="lower-colum1">
-     <label for="school">Select school:</label>
-     <select name="school" id="" title="schools" required>
-      <option value="">-- select ---</option>
-      <option value="Engineering">engineering</option>
-      <option value="Business/management">Business/management</option>
-      <option value="Medicine/Health Sciences">Medicine/Health Sciences</option>
-      <option value="Education">Education</option>
-      <option value=" Social Science">Social Science</option>
-      <option value=" Humanities and arts">Humanities and arts</option>
-      <option value="Information Technology/Computer Science">Information Technology/Computer Science</option>
-      <option value="  Agriculture and Environmental Sciences">Agriculture and Environmental Sciences</option>
-      <option value="Architectre and Design">Architectre and Design</option>
-      <option value="Journalism and Communication">Journalism and Communication</option>
-      <option value="Pubic Policy or Governement">Pubic Policy or Governement</option>
-      <option value=" Hospitalisty and Tourism">Hospitalisty and Tourism</option>
-     </select>
-     <label for="program">Choose a program:</label>
-     <select id="program" name="program">
-      <option value="">-- select --</option>
-      <!-- option group for the engineers -->
-      <optgroup label="Engineering">
-       <option value="mechanical-engineering">Mechanical Engineering</option>
-       <option value="civil-engineering">Civil Engineering</option>
-       <option value="electrical-engineering">Electrical and Electronic Engineering</option>
-       <option value="computer-engineering">Computer Engineering</option>
-       <option value="chemical-engineering">Chemical Engineering</option>
-       <option value="aerospace-engineering">Aerospace Engineering</option>
-       <option value="environmental-engineering">Environmental Engineering</option>
-      </optgroup>
-      <!-- option group for the biz poeple -->
-      <optgroup label="Business and Management">
-       <option value="business-administration">Business Administration</option>
-       <option value="accounting">Accounting</option>
-       <option value="finance">Finance</option>
-       <option value="marketing">Marketing</option>
-       <option value="entrepreneurship">Entrepreneurship</option>
-       <option value="hr-management">Human Resource Management</option>
-       <option value="international-business">International Business</option>
-       <option value="supply-chain-management">Supply Chain Management</option>
-      </optgroup>
-      <!-- option group for teh Information technology -->
-      <optgroup label="Computer Science and Information Technology">
-       <option value="computer-science">Computer Science</option>
-       <option value="information-technology">Information Technology (IT)</option>
-       <option value="software-engineering">Software Engineering</option>
-       <option value="data-science">Data Science</option>
-       <option value="cybersecurity">Cybersecurity</option>
-       <option value="artificial-intelligence">Artificial Intelligence</option>
-       <option value="information-systems">Information Systems</option>
-       <option value="web-development">Web Development</option>
-       <option value="game-development">Game Development</option>
-      </optgroup>
-      <!-- option group for the health section -->
-      <optgroup label="Health and Medical">
-       <option value="medicine">Medicine (M.D.)</option>
-       <option value="nursing">Nursing</option>
-       <option value="pharmacy">Pharmacy</option>
-       <option value="dentistry">Dentistry</option>
-       <option value="public-health">Public Health</option>
-       <option value="biomedical-sciences">Biomedical Sciences</option>
-       <option value="medical-lab-science">Medical Laboratory Science</option>
-       <option value="physical-therapy">Physical Therapy</option>
-       <option value="radiology">Radiology</option>
-      </optgroup>
-     </select>
+     <div class="lower-colum1-labels">
+      <!-- label for school -->
+      <label for="school">Select school:</label>
+      <!-- label for program-->
+      <label for="program">Choose a program:</label>
 
-     <!-- this is for the level section -->
-     <label for="level">Choose your level:</label>
-     <select id="level" name="level">
-      <option value="bachelors">Bachelor's</option>
-      <option value="masters">Master's</option>
-      <option value="phd">PhD</option>
-      <option value="diploma">Diploma</option>
-      <option value="certificate">Certificate</option>
-     </select>
+      <!-- label for level  -->
+      <label for="level">Choose your level:</label>
+
+      <!-- label for fee payment -->
      <label for="feePayment">Fee Amount</label>
+
+     </div>
+
+     <div class="lower-colum1-selects">
+      <!-- select school section  -->
+      <select name="school" id="" title="schools" required>
+       <option value="">-- select ---</option>
+       <option value="Engineering">engineering</option>
+       <option value="Business/management">Business/management</option>
+       <option value="Medicine/Health Sciences">Medicine/Health Sciences</option>
+       <option value="Education">Education</option>
+       <option value=" Social Science">Social Science</option>
+       <option value=" Humanities and arts">Humanities and arts</option>
+       <option value="Information Technology/Computer Science">Information Technology/Computer Science</option>
+       <option value="  Agriculture and Environmental Sciences">Agriculture and Environmental Sciences</option>
+       <option value="Architectre and Design">Architectre and Design</option>
+       <option value="Journalism and Communication">Journalism and Communication</option>
+       <option value="Pubic Policy or Governement">Pubic Policy or Governement</option>
+       <option value=" Hospitalisty and Tourism">Hospitalisty and Tourism</option>
+      </select>
+
+
+      <!-- select program section  -->
+      <select id="program" name="program">
+       <option value="">-- select --</option>
+       <!-- option group for the engineers -->
+       <optgroup label="Engineering">
+        <option value="mechanical-engineering">Mechanical Engineering</option>
+        <option value="civil-engineering">Civil Engineering</option>
+        <option value="electrical-engineering">Electrical and Electronic Engineering</option>
+        <option value="computer-engineering">Computer Engineering</option>
+        <option value="chemical-engineering">Chemical Engineering</option>
+        <option value="aerospace-engineering">Aerospace Engineering</option>
+        <option value="environmental-engineering">Environmental Engineering</option>
+       </optgroup>
+       <!-- option group for the biz poeple -->
+       <optgroup label="Business and Management">
+        <option value="business-administration">Business Administration</option>
+        <option value="accounting">Accounting</option>
+        <option value="finance">Finance</option>
+        <option value="marketing">Marketing</option>
+        <option value="entrepreneurship">Entrepreneurship</option>
+        <option value="hr-management">Human Resource Management</option>
+        <option value="international-business">International Business</option>
+        <option value="supply-chain-management">Supply Chain Management</option>
+       </optgroup>
+       <!-- option group for teh Information technology -->
+       <optgroup label="Computer Science and Information Technology">
+        <option value="computer-science">Computer Science</option>
+        <option value="information-technology">Information Technology (IT)</option>
+        <option value="software-engineering">Software Engineering</option>
+        <option value="data-science">Data Science</option>
+        <option value="cybersecurity">Cybersecurity</option>
+        <option value="artificial-intelligence">Artificial Intelligence</option>
+        <option value="information-systems">Information Systems</option>
+        <option value="web-development">Web Development</option>
+        <option value="game-development">Game Development</option>
+       </optgroup>
+       <!-- option group for the health section -->
+       <optgroup label="Health and Medical">
+        <option value="medicine">Medicine (M.D.)</option>
+        <option value="nursing">Nursing</option>
+        <option value="pharmacy">Pharmacy</option>
+        <option value="dentistry">Dentistry</option>
+        <option value="public-health">Public Health</option>
+        <option value="biomedical-sciences">Biomedical Sciences</option>
+        <option value="medical-lab-science">Medical Laboratory Science</option>
+        <option value="physical-therapy">Physical Therapy</option>
+        <option value="radiology">Radiology</option>
+       </optgroup>
+      </select>
+
+      <!-- select level section  -->
+      <!-- this is for the level section -->
+      <select id="level" name="level">
+       <option value="bachelors">Bachelor's</option>
+       <option value="masters">Master's</option>
+       <option value="phd">PhD</option>
+       <option value="diploma">Diploma</option>
+       <option value="certificate">Certificate</option>
+      </select>
+
+
+      <!-- fee payment input -->
+      <input id="feePayment" type="number" title="fee amount" class="fee-payment">
+     </div>
+
+
     </div>
     <div class="lower-column2">
      <div id="uploadArea" class="upload-area">

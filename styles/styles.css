@@ -4,6 +4,11 @@
  padding: 0;
 }
 
+body {
+ font-family: Arial, sans-serif;
+ background-color: #f4f4f4;
+}
+
 .container {
  width: 100%;
  display: flex;
@@ -23,6 +28,7 @@ form {
 .container .my-profile {
  display: flex;
  justify-content: space-between;
+ margin-bottom: 30px;
 }
 
 .container .my-profile-c1 {
@@ -38,16 +44,30 @@ form {
  border-radius: .5rem;
 }
 
+.my-prfile-c2 {
+ width: 60%;
+ justify-content: start;
+ align-items: center;
+ display: flex;
+}
+
+label {
+ font-size: 1.08rem;
+}
+
 .reg-name {
  width: 100%;
  display: flex;
  align-items: center;
  justify-content: space-between;
+ text-align: center;
+ margin-bottom: 10px;
 }
 
-input {
+.reg-number-input,
+.name-input {
  width: 300px;
- padding: 12px;
+ padding: 7px;
  margin-bottom: 10px;
  font-size: 16px;
  border: 1px solid #ccc;
@@ -58,28 +78,71 @@ input {
  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Fancy shadow effect on focus */
-input:focus {
+.reg-number-input:focus,
+.name-input:focus {
  border-color: #007bff;
  background-color: #fff;
  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
 }
 
-/* Hover effect */
-input:hover {
+.reg-number-input:hover,
+.name-input:hover {
  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Adding a smooth border transition */
-input:focus-visible {
+.reg-number-input:focus-visible,
+.name-input:focus-visible {
  border: 2px solid #007bff;
 }
 
-.my-prfile-c2 {
- width: 60%;
- justify-content: start;
- align-items: center;
+.form-lower {
  display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.lower-colum1 {
+ display: flex;
+ justify-content: space-between;
+}
+
+.lower-colum1-labels {
+ width: 100%;
+}
+
+.lower-colum1-labels label {
+ display: block;
+ margin-bottom: 10px;
+ width: 100%;
+}
+
+.lower-colum1-selects {
+ height: 100%;
+ width: 100%;
+}
+
+.fee-payment,
+.lower-colum1-selects select {
+ width: 300px;
+ border: 2px solid #ccc;
+ border-radius: 5px;
+ padding: 4px;
+ background-color: #f9f9f9;
+ border-radius: 5px;
+ outline: none;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+ transition: all 0.3s ease;
+ transition: border-color 0.3s, box-shadow 0.3s;
+ margin-bottom: 15px;
+}
+
+
+.lower-column2{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 1.5rem;
+ flex-direction: column;
 }
 
 
@@ -89,6 +152,8 @@ button {
  background-color: #007bff;
  color: white;
  cursor: pointer;
+ border-radius: 5px;
+ width: 10rem;
  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) inset;
  transition: box-shadow 0.3s ease;
 }
