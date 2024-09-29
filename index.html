@@ -15,16 +15,24 @@
 
  <div class="container">
   <form action="">
-   <h3>Student registration</h3>
-   <label for="registrationNumber">Registration Number: </label>
-   <input type="text" title="registration number" required>
-   <label for="name">Name</label>
-   <input type="text" title="name" required>
+   <div class="my-profile">
+    <div class="my-profile-c1"><img src="assets/my_profile.jpeg" alt=""></div>
+    <div class="my-prfile-c2">
+     <h1>Student registration</h1>
+    </div>
+   </div>
+
+   <div class="reg-name">
+    <label for="registrationNumber">Reg Number: </label>
+    <input id="registrationNumber" type="text" title="registration number" required>
+    <label for="name">Name</label>
+    <input type="text" title="name" required>
+   </div>
    <label for="gender">gender</label>
    <input type="radio" name="gender" id="" title="gender male"> Male
    <input type="radio" name="gender" id="" title="gender female"> Female
 
-   
+
    <div class="form-lower">
     <div class="lower-colum1">
      <label for="school">Select school:</label>
@@ -45,7 +53,7 @@
      </select>
      <label for="program">Choose a program:</label>
      <select id="program" name="program">
-     <option value="">-- select --</option>
+      <option value="">-- select --</option>
       <!-- option group for the engineers -->
       <optgroup label="Engineering">
        <option value="mechanical-engineering">Mechanical Engineering</option>
@@ -56,7 +64,7 @@
        <option value="aerospace-engineering">Aerospace Engineering</option>
        <option value="environmental-engineering">Environmental Engineering</option>
       </optgroup>
-    <!-- option group for the biz poeple -->
+      <!-- option group for the biz poeple -->
       <optgroup label="Business and Management">
        <option value="business-administration">Business Administration</option>
        <option value="accounting">Accounting</option>
@@ -92,7 +100,7 @@
        <option value="radiology">Radiology</option>
       </optgroup>
      </select>
-     
+
      <!-- this is for the level section -->
      <label for="level">Choose your level:</label>
      <select id="level" name="level">
@@ -105,13 +113,15 @@
      <label for="feePayment">Fee Amount</label>
     </div>
     <div class="lower-column2">
-      <div id="uploadArea" class="upload-area">
-       Drag & Drop or Click to Upload
-      </div>
-      
-      <input class="upload-passport" type="file" id="fileInput" accept="image/*" title="Upload passport">
+     <div id="uploadArea" class="upload-area">
+      Drag & Drop or Click to Upload
+     </div>
+
+     <input class="upload-passport" type="file" id="fileInput" accept="image/*" title="Upload passport">
     </div>
    </div>
+
+   <button type="submit">Submit</button>
   </form>
 
 
